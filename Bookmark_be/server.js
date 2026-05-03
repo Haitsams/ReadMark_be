@@ -14,7 +14,7 @@ const PORT = process.env.PORT || 3000;
 app.use(cors());
 app.use(express.json());
 
-app.use("/api/bookmarks", bookmarkRoutes);
+app.use("/bookmarks", bookmarkRoutes);
 
 app.get("/", (req, res) => {
     res.json({ message: "ReadMark API is running" });
